@@ -6,7 +6,7 @@
 radius = 73.33485
 
 [node name="Bosque" type="Area2D" unique_id=1932790130]
-position = Vector2(132, 104)
+position = Vector2(202, 96)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=34386725]

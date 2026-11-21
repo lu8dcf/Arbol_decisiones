@@ -1,11 +1,10 @@
-extends Area2D
+extends Node2D
+class_name horno
 
+@export var nivel_lenia := 100
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _process(delta):
 
+	nivel_lenia -= delta * 2
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	nivel_lenia = clamp(nivel_lenia,0,100)

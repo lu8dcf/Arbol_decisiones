@@ -6,9 +6,34 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 4.0
 
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_nhov3"]
+var/horno_lleno/name = &"horno_lleno"
+var/horno_lleno/type = 1
+var/horno_lleno/value = false
+var/horno_lleno/hint = 0
+var/horno_lleno/hint_string = ""
+var/lleva_madera/name = &"lleva_madera"
+var/lleva_madera/type = 1
+var/lleva_madera/value = false
+var/lleva_madera/hint = 0
+var/lleva_madera/hint_string = ""
+var/target_position/name = &"target_position"
+var/target_position/type = 5
+var/target_position/value = Vector2(0, 0)
+var/target_position/hint = 0
+var/target_position/hint_string = ""
+var/nivel_horno/name = &"nivel_horno"
+var/nivel_horno/type = 3
+var/nivel_horno/value = 0.0
+var/nivel_horno/hint = 0
+var/nivel_horno/hint_string = ""
+
+[sub_resource type="BehaviorTree" id="BehaviorTree_sugfe"]
+blackboard_plan = SubResource("BlackboardPlan_nhov3")
+
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_mvjyh"]
 
-[node name="Npc" type="CharacterBody2D" unique_id=230588526]
+[node name="Npc1" type="CharacterBody2D" unique_id=230588526]
 collision_layer = 2
 collision_mask = 189
 script = ExtResource("1_wpycl")
@@ -28,4 +53,5 @@ radius = 50.0
 debug_path_custom_color = Color(1, 0.21176471, 1, 1)
 
 [node name="BTPlayer" type="BTPlayer" parent="." unique_id=87383309]
+behavior_tree = SubResource("BehaviorTree_sugfe")
 blackboard_plan = SubResource("BlackboardPlan_mvjyh")

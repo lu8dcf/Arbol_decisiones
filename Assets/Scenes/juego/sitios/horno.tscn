@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://b7y78228mdbpn"]
 
 [ext_resource type="Texture2D" uid="uid://gvudr4uf30ec" path="res://icon.svg" id="1_km5xt"]
+[ext_resource type="Script" uid="uid://cdqmnyphm1uv" path="res://Assets/Scenes/juego/sitios/horno.gd" id="1_vy4k5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 70.064255
 
 [node name="Horno" type="Area2D" unique_id=1651790087]
-position = Vector2(566, 264)
+position = Vector2(816, 173)
+script = ExtResource("1_vy4k5")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1176417142]

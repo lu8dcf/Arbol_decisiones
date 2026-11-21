@@ -6,7 +6,7 @@
 radius = 73.109505
 
 [node name="Descanso" type="Area2D" unique_id=1954115742]
-position = Vector2(207, 467)
+position = Vector2(444, 461)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1631528293]
