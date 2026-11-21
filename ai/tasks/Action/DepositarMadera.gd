@@ -1,15 +1,15 @@
 extends BTAction
 
-func _tick(delta):
+func _tick(_delta):
 
 	var npc = agent
 
-	var horno = npc.get_tree().get_first_node_in_group("horno")
+	var horno_node = npc.get_tree().get_first_node_in_group("horno")
 
-	horno.nivel_lenia += 20
+	horno_node.nivel_lenia += 20
 
-	horno.nivel_lenia = clamp(
-		horno.nivel_lenia,
+	horno_node.nivel_lenia = clamp(
+		horno_node.nivel_lenia,
 		0,
 		100
 	)

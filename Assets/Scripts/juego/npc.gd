@@ -4,22 +4,27 @@ class_name leñador
 @export var velocidad := 100.0
 
 @onready var agent = $NavigationAgent2D
+@onready var bosque = get_tree().get_first_node_in_group("bosque")
+@onready var horno = get_tree().get_first_node_in_group("horno")
+@onready var descanso = get_tree().get_first_node_in_group("descanso")
 
-var destino : Vector2
+var destino_actual : Vector2
+
+
 
 var lleva_madera := false
 var talando := false
 
 func _ready():
 	
-	var descanso = get_tree().get_first_node_in_group("descanso")
+	
 
 	if descanso:
-		destino = descanso.global_position
+		destino_actual = descanso.global_position
 
 func _physics_process(_delta):
 
-	agent.target_position = destino
+	agent.target_position = destino_actual
 
 	if agent.is_navigation_finished():
 		velocity = Vector2.ZERO
@@ -34,10 +39,10 @@ func _physics_process(_delta):
 
 	move_and_slide()
 
-func ir_a(posicion:Vector2):
-
-	destino = posicion
+func ir_a(posicion: Vector2):
+	print("Nuevo destino: ", posicion)
+	destino_actual = posicion
 
 func llego_destino() -> bool:
 
-	return agent.is_navigation_finished()
+	return global_position.distance_to(destino_actual) < 20

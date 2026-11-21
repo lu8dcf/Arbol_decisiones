@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c7gepf3sivg4c"]
 
+[ext_resource type="Script" uid="uid://d320vdverlond" path="res://Assets/Scenes/juego/sitios/bosque.gd" id="1_dkexb"]
 [ext_resource type="Texture2D" uid="uid://7tuxjni6cxl7" path="res://Models/bosque.jpg" id="1_opt8j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -7,6 +8,7 @@ radius = 73.33485
 
 [node name="Bosque" type="Area2D" unique_id=1932790130]
 position = Vector2(202, 96)
+script = ExtResource("1_dkexb")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=34386725]

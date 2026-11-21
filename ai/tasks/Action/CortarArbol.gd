@@ -1,6 +1,6 @@
 extends BTAction
 
-func _tick(delta: float) -> Status:
+func _tick(_delta: float) -> Status:
 
 	var npc = get_agent()
 

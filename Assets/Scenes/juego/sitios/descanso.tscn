@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bbn547pillhwy"]
 
+[ext_resource type="Script" uid="uid://derbysn361g4b" path="res://Assets/Scenes/juego/sitios/descanso.gd" id="1_1guc4"]
 [ext_resource type="Texture2D" uid="uid://btys6fh8o1816" path="res://Models/descanso.png" id="1_kcnx3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -7,6 +8,7 @@ radius = 73.109505
 
 [node name="Descanso" type="Area2D" unique_id=1954115742]
 position = Vector2(444, 461)
+script = ExtResource("1_1guc4")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1631528293]

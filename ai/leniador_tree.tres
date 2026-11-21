@@ -1,0 +1,51 @@
+[gd_resource type="BehaviorTree" format=3 uid="uid://c1qj5uonfd6ax"]
+
+[ext_resource type="Script" uid="uid://l47gwauvkwbt" path="res://ai/tasks/Condition/comprobarHornoBajo.gd" id="1_e4lnm"]
+[ext_resource type="Script" uid="uid://b7jwnqiy0bom7" path="res://ai/tasks/Action/IrBosque.gd" id="2_le6uy"]
+[ext_resource type="Script" uid="uid://c0hbdsebm0nv3" path="res://ai/tasks/Action/CortarArbol.gd" id="3_tg2pf"]
+[ext_resource type="Script" uid="uid://mk5jp4jn1qe5" path="res://ai/tasks/Action/IrHorno.gd" id="4_tjw0i"]
+[ext_resource type="Script" uid="uid://b3cwevu7kgkkf" path="res://ai/tasks/Action/DepositarMadera.gd" id="5_c6ym5"]
+[ext_resource type="Script" uid="uid://b7y064ac6k1em" path="res://ai/tasks/Condition/ComprobarHornoAlto.gd" id="6_snadw"]
+[ext_resource type="Script" uid="uid://b5741lmb371n5" path="res://ai/tasks/Action/IrDescanso.gd" id="7_unynb"]
+[ext_resource type="Script" uid="uid://pnreumj3nxub" path="res://ai/tasks/Action/Esperar.gd" id="8_n0wiq"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_g2dd1"]
+
+[sub_resource type="BTCondition" id="BTCondition_1m4rr"]
+script = ExtResource("1_e4lnm")
+
+[sub_resource type="BTAction" id="BTAction_yx7uq"]
+script = ExtResource("2_le6uy")
+
+[sub_resource type="BTAction" id="BTAction_6bjl1"]
+script = ExtResource("3_tg2pf")
+
+[sub_resource type="BTAction" id="BTAction_ma3o2"]
+script = ExtResource("4_tjw0i")
+
+[sub_resource type="BTAction" id="BTAction_xtt7u"]
+script = ExtResource("5_c6ym5")
+
+[sub_resource type="BTSequence" id="BTSequence_yrm2x"]
+custom_name = "Trabajar"
+children = [SubResource("BTCondition_1m4rr"), SubResource("BTAction_yx7uq"), SubResource("BTAction_6bjl1"), SubResource("BTAction_ma3o2"), SubResource("BTAction_xtt7u")]
+
+[sub_resource type="BTCondition" id="BTCondition_uctq7"]
+script = ExtResource("6_snadw")
+
+[sub_resource type="BTAction" id="BTAction_5eu41"]
+script = ExtResource("7_unynb")
+
+[sub_resource type="BTAction" id="BTAction_kq5yn"]
+script = ExtResource("8_n0wiq")
+
+[sub_resource type="BTSequence" id="BTSequence_n6eh7"]
+custom_name = "Descanso"
+children = [SubResource("BTCondition_uctq7"), SubResource("BTAction_5eu41"), SubResource("BTAction_kq5yn")]
+
+[sub_resource type="BTSelector" id="BTSelector_15h8i"]
+children = [SubResource("BTSequence_yrm2x"), SubResource("BTSequence_n6eh7")]
+
+[resource]
+blackboard_plan = SubResource("BlackboardPlan_g2dd1")
+root_task = SubResource("BTSelector_15h8i")

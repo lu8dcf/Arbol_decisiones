@@ -1,9 +1,15 @@
 extends BTAction
 
-func _tick(delta: float) -> Status:
+func _tick(_delta: float) -> Status:
 
 	var npc = get_agent()
 
-	npc.destino_actual = npc.bosque.global_position
+	print("IR AL BOSQUE")
 
-	return SUCCESS
+	npc.ir_a(npc.bosque.global_position)
+
+	if npc.llego_destino():
+		print("LLEGO AL BOSQUE")
+		return SUCCESS
+
+	return RUNNING
