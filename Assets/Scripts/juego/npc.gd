@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name leñador
 
-@export var velocidad := 400.0
+@export var velocidad := 200.0
 
 @onready var agent = $NavigationAgent2D
 @onready var bosque = get_tree().get_first_node_in_group("bosque")
@@ -43,7 +43,7 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func ir_a(posicion: Vector2):
-	print("Nuevo destino: ", posicion)
+	#print("Nuevo destino: ", posicion)
 	destino_actual = posicion
 
 func llego_destino() -> bool:

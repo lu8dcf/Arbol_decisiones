@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cj6p0uoxupuf7" path="res://Assets/Scripts/menu/juego.gd" id="1_clgxj"]
 [ext_resource type="PackedScene" uid="uid://crsjumhou2i8t" path="res://Assets/Scenes/menu/menu.tscn" id="2_37pdc"]
+[ext_resource type="PackedScene" uid="uid://b7i1m1wec61l2" path="res://Assets/Scenes/juego/sitios/mina.tscn" id="2_bvm2x"]
 [ext_resource type="PackedScene" uid="uid://dfadd01jfq8ki" path="res://Assets/Scenes/juego/mapa.tscn" id="2_qoyqk"]
 [ext_resource type="PackedScene" uid="uid://bbn547pillhwy" path="res://Assets/Scenes/juego/sitios/descanso.tscn" id="2_wypvq"]
 [ext_resource type="PackedScene" uid="uid://pfgrnc3yhlr8" path="res://Assets/Scenes/juego/fabrica_npc.tscn" id="3_37pdc"]
@@ -10,6 +11,8 @@
 
 [node name="Juego" type="Node2D" unique_id=127621805]
 script = ExtResource("1_clgxj")
+
+[node name="Mina" parent="." unique_id=1198735385 instance=ExtResource("2_bvm2x")]
 
 [node name="Descanso" parent="." unique_id=1954115742 instance=ExtResource("2_wypvq")]
 position = Vector2(339, 571)

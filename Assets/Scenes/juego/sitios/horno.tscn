@@ -29,4 +29,12 @@ offset_right = 58.0
 offset_bottom = -91.0
 text = "Leña: "
 
+[node name="hierro" type="Label" parent="." unique_id=1180700050]
+modulate = Color(0.35304663, 0.45164502, 0.92419654, 1)
+offset_left = -48.0
+offset_top = -90.0
+offset_right = -8.0
+offset_bottom = -67.0
+text = "Hierro"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

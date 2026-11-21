@@ -16,10 +16,18 @@ func _tick(delta: float) -> Status:
 			100
 		)
 
+		print("Nivel horno:", horno_node.nivel_lenia)
+
 		npc.nivel = 0
 
 		npc.lleva_madera = false
 
 		npc.actualizar_label()
+
+		if horno_node.nivel_lenia >= 80:
+
+			print("IR A DESCANSAR")
+
+			npc.trabajando = false
 
 	return SUCCESS

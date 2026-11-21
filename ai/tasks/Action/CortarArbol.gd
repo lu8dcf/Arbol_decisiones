@@ -12,7 +12,7 @@ func _tick(delta: float) -> Status:
 
 		npc.lleva_madera = true
 
-		npc.nivel = 20
+		npc.nivel = 30
 
 		npc.actualizar_label()
 
