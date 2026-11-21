@@ -1,13 +1,20 @@
 extends BTCondition
 
-func _tick(_delta: float) -> Status:
+func _tick(delta: float) -> Status:
 
-	var horno_node = agent.get_tree().get_first_node_in_group("horno")
+	var npc = get_agent()
 
-	print("Nivel:", horno_node.nivel_lenia)
+	if npc.trabajando:
+		return SUCCESS
+
+	var horno_node = npc.horno
 
 	if horno_node.nivel_lenia <= 20:
-		print("HORNO BAJO")
+
+		npc.trabajando = true
+
+		print("EMPEZAR A TRABAJAR")
+
 		return SUCCESS
 
 	return FAILURE

@@ -1,9 +1,23 @@
 extends BTAction
 
-func _tick(_delta: float) -> Status:
+var tiempo := 0.0
 
-	var npc = get_agent()
+func _tick(delta: float) -> Status:
 
-	npc.destino_actual = npc.bosque.global_position
+	tiempo += delta
 
-	return SUCCESS
+	if tiempo >= 3.0:
+
+		var npc = get_agent()
+
+		npc.lleva_madera = true
+
+		npc.nivel = 20
+
+		npc.actualizar_label()
+
+		tiempo = 0.0
+
+		return SUCCESS
+
+	return RUNNING

@@ -1,23 +1,26 @@
 extends CharacterBody2D
 class_name leñador
 
-@export var velocidad := 100.0
+@export var velocidad := 400.0
 
 @onready var agent = $NavigationAgent2D
 @onready var bosque = get_tree().get_first_node_in_group("bosque")
 @onready var horno = get_tree().get_first_node_in_group("horno")
 @onready var descanso = get_tree().get_first_node_in_group("descanso")
 
-var destino_actual : Vector2
+var destino_actual : Vector2 
 
-
+var trabajando := false
 
 var lleva_madera := false
 var talando := false
+# recurso
+var nivel := 0
+@onready var lbl_madera = $Label
 
 func _ready():
 	
-	
+	actualizar_label()
 
 	if descanso:
 		destino_actual = descanso.global_position
@@ -46,3 +49,7 @@ func ir_a(posicion: Vector2):
 func llego_destino() -> bool:
 
 	return global_position.distance_to(destino_actual) < 20
+
+func actualizar_label():
+
+	lbl_madera.text = str(nivel)
