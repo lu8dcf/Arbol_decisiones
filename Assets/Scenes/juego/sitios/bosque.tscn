@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c7gepf3sivg4c"]
 
-[ext_resource type="Texture2D" uid="uid://gvudr4uf30ec" path="res://icon.svg" id="1_opt8j"]
+[ext_resource type="Texture2D" uid="uid://7tuxjni6cxl7" path="res://Models/bosque.jpg" id="1_opt8j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 73.33485
@@ -10,7 +10,8 @@ position = Vector2(202, 96)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=34386725]
-position = Vector2(2, 0)
+position = Vector2(5, 2)
+scale = Vector2(0.025276674, 0.02867101)
 texture = ExtResource("1_opt8j")
 metadata/_edit_group_ = true
 
