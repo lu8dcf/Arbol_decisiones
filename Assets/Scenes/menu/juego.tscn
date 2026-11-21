@@ -21,6 +21,5 @@ position = Vector2(339, 571)
 [node name="Menu" parent="." unique_id=1154234872 instance=ExtResource("2_37pdc")]
 
 [node name="mapa" parent="." unique_id=2124173842 instance=ExtResource("2_qoyqk")]
-visible = false
 
 [node name="fabrica_npc" parent="." unique_id=1786914242 instance=ExtResource("3_37pdc")]
