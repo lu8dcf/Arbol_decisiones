@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b7i1m1wec61l2"]
 
+[ext_resource type="Script" uid="uid://bbsq0s3vo641f" path="res://Assets/Scenes/juego/sitios/mina.gd" id="1_e6dtq"]
 [ext_resource type="Texture2D" uid="uid://rd65e2pv7jwn" path="res://Models/mina.png" id="1_l0tv5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -7,6 +8,7 @@ radius = 60.299255
 
 [node name="Mina" type="Area2D" unique_id=1198735385]
 position = Vector2(1053, 362)
+script = ExtResource("1_e6dtq")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=905016026]

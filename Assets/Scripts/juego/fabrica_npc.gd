@@ -2,6 +2,8 @@ extends Node2D
 
 
 var leniador_scene = preload("res://Assets/Scenes/juego/npc1.tscn")
+var minero_scene = preload("res://Assets/Scenes/juego/npc2.tscn")
+
 var boton_npc: int = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -15,7 +17,13 @@ func seleccionar_tipo(tipo):
 
 func iniciar_npc(_tipo):
 	
+	# leñador
 	var npc = leniador_scene.instantiate()
+	npc.global_position = Vector2(75,570)
+	get_tree().current_scene.add_child(npc)
+	
+	# minero
+	npc = minero_scene.instantiate()
 	npc.global_position = Vector2(75,570)
 	get_tree().current_scene.add_child(npc)
 	

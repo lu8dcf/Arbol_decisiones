@@ -37,4 +37,12 @@ offset_right = -8.0
 offset_bottom = -67.0
 text = "Hierro"
 
+[node name="lingote" type="Label" parent="." unique_id=305693269]
+modulate = Color(0.6541587, 0.65174586, 0.21741, 1)
+offset_left = -51.0
+offset_top = 67.0
+offset_right = -11.0
+offset_bottom = 90.0
+text = "Lingote:"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

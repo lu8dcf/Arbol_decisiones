@@ -13,7 +13,7 @@ func _tick(delta: float) -> Status:
 
 		npc.trabajando = true
 
-		print("EMPEZAR A TRABAJAR")
+		#print("EMPEZAR A TRABAJAR")
 
 		return SUCCESS
 

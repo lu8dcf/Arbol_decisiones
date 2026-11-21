@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://jkdqmhy5evjs"]
+
+[ext_resource type="Script" uid="uid://b8ioe6jmedukh" path="res://Assets/Scenes/juego/npc_2.gd" id="1_3tsa8"]
+[ext_resource type="Texture2D" uid="uid://jsf36waysau2" path="res://Models/3.png" id="2_gxs31"]
+[ext_resource type="BehaviorTree" uid="uid://b5s3yjxy026ku" path="res://ai/minero_tree.tres" id="3_3tsa8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
+radius = 4.0
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_mvjyh"]
+
+[node name="Npc2" type="CharacterBody2D" unique_id=230588526]
+collision_layer = 2
+collision_mask = 189
+script = ExtResource("1_3tsa8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2008583862]
+shape = SubResource("CircleShape2D_sugfe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1108293392]
+position = Vector2(-4.172325e-07, -1.1920929e-07)
+scale = Vector2(0.08, 0.06666666)
+texture = ExtResource("2_gxs31")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1305577928]
+radius = 50.0
+debug_path_custom_color = Color(1, 0.21176471, 1, 1)
+
+[node name="BTPlayer" type="BTPlayer" parent="." unique_id=87383309]
+behavior_tree = ExtResource("3_3tsa8")
+blackboard_plan = SubResource("BlackboardPlan_mvjyh")
+
+[node name="Label" type="Label" parent="." unique_id=842467391]
+modulate = Color(0.89002526, 0.52280676, 0.13407472, 1)
+offset_left = -10.0
+offset_top = -28.0
+offset_right = 13.0
+offset_bottom = -5.0
+text = "1"

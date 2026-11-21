@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbb0b7s28cg8x"]
+
+[ext_resource type="Script" uid="uid://cflda2il6u786" path="res://Assets/Scenes/juego/sitios/carbon.gd" id="1_n28c1"]
+[ext_resource type="Texture2D" uid="uid://ckxtnloudntos" path="res://Models/carbon.png" id="2_854h2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
+radius = 63.15061
+
+[node name="Carbon" type="Area2D" unique_id=474336400]
+position = Vector2(76, 320)
+script = ExtResource("1_n28c1")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1125199200]
+texture = ExtResource("2_854h2")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1656947791]
+shape = SubResource("CircleShape2D_sugfe")
+metadata/_edit_group_ = true

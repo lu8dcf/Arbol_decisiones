@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dxod1fs5fcq33"]
+
+[ext_resource type="Script" uid="uid://dxyf5ehvbas8h" path="res://Assets/Scenes/juego/sitios/fundicion.gd" id="1_3ty8l"]
+[ext_resource type="Texture2D" uid="uid://cchl3tj1a8wph" path="res://Models/herreria.png" id="2_qa8o4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
+radius = 69.354164
+
+[node name="Herreria" type="Area2D" unique_id=197779326]
+position = Vector2(503, 343)
+script = ExtResource("1_3ty8l")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=55576685]
+position = Vector2(5.000002, -3.999998)
+scale = Vector2(0.49229696, 0.66714287)
+texture = ExtResource("2_qa8o4")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1120898635]
+position = Vector2(-2, 0)
+shape = SubResource("CircleShape2D_sugfe")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1800220676]
+modulate = Color(0.017296523, 0.14988923, 0.123004444, 1)
+offset_left = -74.0
+offset_top = -120.0
+offset_right = -34.0
+offset_bottom = -97.0
+text = "Carbon: "
+metadata/_edit_group_ = true
+
+[node name="Label2" type="Label" parent="." unique_id=653939008]
+modulate = Color(1, 1, 0.2, 1)
+offset_left = -74.0
+offset_top = -96.0
+offset_right = -34.0
+offset_bottom = -73.0
+text = "Lingotes: "
+metadata/_edit_group_ = true
+
+[node name="Label3" type="Label" parent="." unique_id=626599963]
+modulate = Color(1, 0.21568628, 0.09019608, 1)
+offset_left = -76.0
+offset_top = 72.0
+offset_right = -36.0
+offset_bottom = 95.0
+text = "Espadas"
+metadata/_edit_group_ = true

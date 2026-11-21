@@ -4,7 +4,7 @@ func _tick(_delta: float) -> Status:
 
 	var npc = get_agent()
 
-	print("IR AL BOSQUE")
+	#print("IR AL BOSQUE")
 
 	npc.ir_a(npc.bosque.global_position)
 
