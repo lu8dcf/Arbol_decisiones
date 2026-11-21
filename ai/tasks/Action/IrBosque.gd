@@ -9,7 +9,7 @@ func _tick(_delta: float) -> Status:
 	npc.ir_a(npc.bosque.global_position)
 
 	if npc.llego_destino():
-		print("LLEGO AL BOSQUE")
+		#print("LLEGO AL BOSQUE")
 		return SUCCESS
 
 	return RUNNING

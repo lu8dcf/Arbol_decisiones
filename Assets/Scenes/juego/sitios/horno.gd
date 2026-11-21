@@ -1,5 +1,5 @@
 extends Node2D
-class_name horno
+class_name horno_class
 
 @export var nivel_lenia := 0
 @export var nivel_hierro := 0

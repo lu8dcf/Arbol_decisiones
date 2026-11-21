@@ -48,3 +48,8 @@ offset_right = -36.0
 offset_bottom = 95.0
 text = "Espadas"
 metadata/_edit_group_ = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1059835603]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

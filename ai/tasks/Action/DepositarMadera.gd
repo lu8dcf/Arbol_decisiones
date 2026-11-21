@@ -1,6 +1,6 @@
 extends BTAction
 
-func _tick(delta: float) -> Status:
+func _tick(_delta: float) -> Status:
 
 	var npc = get_agent()
 
@@ -16,7 +16,7 @@ func _tick(delta: float) -> Status:
 			100
 		)
 
-		print("Nivel horno:", horno_node.nivel_lenia)
+		#print("Nivel horno:", horno_node.nivel_lenia)
 
 		npc.nivel = 0
 

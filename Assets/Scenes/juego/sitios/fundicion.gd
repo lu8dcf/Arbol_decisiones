@@ -1,14 +1,14 @@
 extends Area2D
-class_name herreria
+class_name herreria_class
 
 
 
-@export var nivel_lenia := 0
-@export var nivel_hierro := 0
-@onready var label = $Label
-@onready var label_hierro = $Label2
-@onready var label_lingote = $Label3
+@export var nivel_carbon := 0
 @export var nivel_lingote := 0
+@onready var label_carbon = $Label
+@onready var label_lingote = $Label2
+@onready var label_espada = $Label3
+@export var nivel_espada:= 0
 var acumulado = 0
 
 func _ready() -> void:
@@ -18,21 +18,21 @@ func _ready() -> void:
 
 
 func _on_timer_timeout() -> void:
-	
-	if nivel_lenia > 3 and nivel_hierro > 1 and nivel_lingote<20:
-		nivel_lenia -=  2
-		nivel_lenia = clamp(nivel_lenia,0,100)
-		nivel_hierro -=  1
-		nivel_hierro = clamp(nivel_hierro,0,100)
+	print (nivel_lingote)
+	if nivel_carbon > 3 and nivel_lingote > 1:
+		nivel_carbon -=  3
+		nivel_carbon = clamp(nivel_carbon,0,100)
+		nivel_lingote -=  1
+		nivel_lingote = clamp(nivel_lingote,0,100)
 		acumulado +=1
 		if acumulado > 3:
 			acumulado = 0
-			nivel_lingote +=1
+			nivel_espada +=1
 				
 				 
 	actualizar_texto()
 	
 func actualizar_texto():
-	label.text = "Carbon: " + str(nivel_lenia)
-	label_hierro.text = "Lingotes: " + str(nivel_hierro)
-	label_lingote.text = "Espadas: " + str(nivel_lingote)
+	label_carbon.text = "Carbon: " + str(nivel_carbon)
+	label_lingote.text = "Lingotes: " + str(nivel_lingote)
+	label_espada.text = "Espadas: " + str(nivel_espada)
