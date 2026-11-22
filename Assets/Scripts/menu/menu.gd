@@ -56,16 +56,9 @@ func _on_random_pressed() -> void:
 	$Control/random.modulate = Color.RED
 
 func _on_create_obs_pressed() -> void:
-	if GlobalGame.create:
-		GlobalGame.create = false
-		$Control/create_obs.modulate = Color.WHITE
+	GlobalSignal.compra_espada.emit()
 		
-	else:
-		GlobalGame.create = true 
-		GlobalGame.delete = false
-		$Control/delete_obs.modulate = Color.WHITE
-		$Control/create_obs.modulate = Color.RED
-		#Input.set_custom_mouse_cursor(cursor)
+	
 
 func _on_delete_obs_pressed() -> void:
 	

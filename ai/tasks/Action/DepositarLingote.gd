@@ -29,7 +29,7 @@ func _tick(_delta: float) -> Status:
 
 			#print("IR A DESCANSAR")
 
-			npc.trabajando = true
+			npc.trabajando = false
 	return SUCCESS
 
 	

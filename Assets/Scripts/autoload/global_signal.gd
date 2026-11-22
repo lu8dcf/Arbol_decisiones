@@ -8,3 +8,6 @@ signal boton(tipo: int)
 
 @warning_ignore("unused_signal")
 signal ver_ruta()
+
+@warning_ignore("unused_signal")
+signal compra_espada()

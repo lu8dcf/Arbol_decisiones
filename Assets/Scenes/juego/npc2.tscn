@@ -31,7 +31,7 @@ behavior_tree = ExtResource("3_3tsa8")
 blackboard_plan = SubResource("BlackboardPlan_mvjyh")
 
 [node name="Label" type="Label" parent="." unique_id=842467391]
-modulate = Color(0.89002526, 0.52280676, 0.13407472, 1)
+modulate = Color(0.33333334, 0.60784316, 0.8862745, 1)
 offset_left = -10.0
 offset_top = -28.0
 offset_right = 13.0

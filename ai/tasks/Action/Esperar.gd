@@ -4,6 +4,6 @@ func _tick(_delta: float) -> Status:
 
 	var npc = get_agent()
 
-	npc.destino_actual = npc.horno.global_position
+	npc.destino_actual = npc.descanso.global_position
 
 	return SUCCESS

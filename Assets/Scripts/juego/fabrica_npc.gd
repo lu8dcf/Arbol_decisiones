@@ -4,6 +4,7 @@ extends Node2D
 var leniador_scene = preload("res://Assets/Scenes/juego/npc1.tscn")
 var minero_scene = preload("res://Assets/Scenes/juego/npc2.tscn")
 var transporte_scene = preload("res://Assets/Scenes/juego/npc3.tscn")
+var carbonero_scene = preload("res://Assets/Scenes/juego/npc4.tscn")
 
 var boton_npc: int = 0
 
@@ -33,7 +34,11 @@ func iniciar_npc(_tipo):
 	npc.global_position = Vector2(75,570)
 	get_tree().current_scene.add_child(npc)
 	
-
+	#carbonero
+	npc = carbonero_scene.instantiate()
+	npc.global_position = Vector2(75,570)
+	get_tree().current_scene.add_child(npc)
+	
 func _on_timer_timeout() -> void:
 	#iniciar_npc()
 	pass

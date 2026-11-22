@@ -22,6 +22,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="common" type="Button" parent="Control" unique_id=880286879]
+visible = false
 layout_mode = 0
 offset_left = 477.0
 offset_top = 594.00006
@@ -32,6 +33,7 @@ icon = ExtResource("2_vhjer")
 text_overrun_behavior = 2
 
 [node name="fire" type="Button" parent="Control" unique_id=2126395576]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.45600003
@@ -46,6 +48,7 @@ scale = Vector2(0.24621922, 0.24621922)
 icon = ExtResource("3_t12pu")
 
 [node name="cold" type="Button" parent="Control" unique_id=2026729129]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -60,6 +63,7 @@ scale = Vector2(0.24864383, 0.24864383)
 icon = ExtResource("1_p3l0g")
 
 [node name="lightning" type="Button" parent="Control" unique_id=469710490]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.53800005
@@ -75,6 +79,7 @@ icon = ExtResource("1_11chp")
 icon_alignment = 1
 
 [node name="poison" type="Button" parent="Control" unique_id=308976313]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.57900006
@@ -90,6 +95,7 @@ icon = ExtResource("2_p3l0g")
 icon_alignment = 1
 
 [node name="random" type="Button" parent="Control" unique_id=1314046838]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.62200004
@@ -114,9 +120,11 @@ offset_left = -0.960022
 offset_top = -1.0480347
 offset_right = -0.44006348
 offset_bottom = -1.1520386
-text = "Crear Obstaculo"
+text = "Comprar Espada
+"
 
 [node name="delete_obs" type="Button" parent="Control" unique_id=247103032]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.84800005
@@ -130,6 +138,7 @@ offset_bottom = -0.9680176
 text = "Borrar Obstaculo"
 
 [node name="CheckButton" type="CheckButton" parent="Control" unique_id=1180127226]
+visible = false
 layout_mode = 0
 offset_left = 157.0
 offset_top = 596.0
