@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b0p2hl5h0gqq"]
 
 [ext_resource type="Script" uid="uid://xst6og211lku" path="res://Assets/Scripts/juego/npc.gd" id="1_wpycl"]
-[ext_resource type="Texture2D" uid="uid://bhrpieupm2aim" path="res://Models/1.png" id="2_mvjyh"]
+[ext_resource type="Texture2D" uid="uid://bd08b4d0sxngw" path="res://Models/leñador.png" id="2_nhov3"]
 [ext_resource type="BehaviorTree" uid="uid://c1qj5uonfd6ax" path="res://ai/leniador_tree.tres" id="3_nhov3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -18,8 +18,9 @@ script = ExtResource("1_wpycl")
 shape = SubResource("CircleShape2D_sugfe")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1108293392]
-scale = Vector2(0.08, 0.06666666)
-texture = ExtResource("2_mvjyh")
+position = Vector2(1.0000002, -2)
+scale = Vector2(0.050643303, 0.05047811)
+texture = ExtResource("2_nhov3")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1305577928]
 radius = 50.0
@@ -31,8 +32,9 @@ blackboard_plan = SubResource("BlackboardPlan_mvjyh")
 
 [node name="Label" type="Label" parent="." unique_id=842467391]
 modulate = Color(0.89002526, 0.52280676, 0.13407472, 1)
-offset_left = -10.0
-offset_top = -28.0
-offset_right = 13.0
-offset_bottom = -5.0
+offset_left = -16.0
+offset_top = -45.0
+offset_right = 7.0
+offset_bottom = -17.0
+theme_override_font_sizes/font_size = 20
 text = "1"

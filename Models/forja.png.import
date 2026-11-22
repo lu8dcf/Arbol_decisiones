@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7tuxjni6cxl7"
-path="res://.godot/imported/bosque.jpg-f68f9d595bbc41ab6bb1fa5278928898.ctex"
+uid="uid://nk12akpka2xm"
+path="res://.godot/imported/forja.png-e8c1455dadda73caa12c6da685ea139b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/bosque.jpg"
-dest_files=["res://.godot/imported/bosque.jpg-f68f9d595bbc41ab6bb1fa5278928898.ctex"]
+source_file="res://Models/forja.png"
+dest_files=["res://.godot/imported/forja.png-e8c1455dadda73caa12c6da685ea139b.ctex"]
 
 [params]
 

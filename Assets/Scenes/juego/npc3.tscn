@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d03qe3cd4m7a5"]
 
 [ext_resource type="Script" uid="uid://bw0p2fxlcvbvn" path="res://Assets/Scenes/juego/npc_3.gd" id="1_3drcl"]
-[ext_resource type="Texture2D" uid="uid://cl55w8w14eh0i" path="res://Models/5.png" id="2_88335"]
+[ext_resource type="Texture2D" uid="uid://cjxdx2brqwdci" path="res://Models/transportista.png" id="2_3drcl"]
 [ext_resource type="BehaviorTree" uid="uid://5gu6kl1f73l0" path="res://ai/transporte_tree.tres" id="3_3drcl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -20,7 +20,7 @@ shape = SubResource("CircleShape2D_sugfe")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1108293392]
 position = Vector2(-4.172325e-07, -1.1920929e-07)
 scale = Vector2(0.08, 0.06666666)
-texture = ExtResource("2_88335")
+texture = ExtResource("2_3drcl")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1305577928]
 radius = 50.0
@@ -31,9 +31,10 @@ behavior_tree = ExtResource("3_3drcl")
 blackboard_plan = SubResource("BlackboardPlan_mvjyh")
 
 [node name="Label" type="Label" parent="." unique_id=842467391]
-modulate = Color(0.6088879, 0.6669568, 0.15197912, 1)
-offset_left = -10.0
-offset_top = -28.0
-offset_right = 13.0
-offset_bottom = -5.0
+modulate = Color(0.2695258, 0.29812586, 0.05234526, 1)
+offset_left = -18.0
+offset_top = -49.0
+offset_right = 5.0
+offset_bottom = -26.0
+theme_override_font_sizes/font_size = 19
 text = "1"

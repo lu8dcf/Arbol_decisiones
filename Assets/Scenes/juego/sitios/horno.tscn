@@ -7,42 +7,51 @@
 radius = 70.064255
 
 [node name="Horno" type="Area2D" unique_id=1651790087]
-position = Vector2(816, 173)
+position = Vector2(816, 233)
 script = ExtResource("1_vy4k5")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1176417142]
-position = Vector2(9.000006, -2.6250038)
-scale = Vector2(0.19939579, 0.24263157)
+position = Vector2(-18.999998, 4)
+scale = Vector2(0.14559639, 0.15415269)
 texture = ExtResource("2_vy4k5")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1728026908]
 shape = SubResource("CircleShape2D_sugfe")
+metadata/_edit_group_ = true
 
 [node name="Timer" type="Timer" parent="." unique_id=581045526]
 autostart = true
 
 [node name="Label" type="Label" parent="." unique_id=2127423980]
-modulate = Color(0.34969938, 0.15295556, 0.013671371, 1)
+modulate = Color(0.24252397, 0.09815521, 0.005682268, 1)
 offset_left = -49.0
 offset_top = -114.0
 offset_right = 58.0
 offset_bottom = -91.0
+theme_override_font_sizes/font_size = 21
 text = "Leña: "
+metadata/_edit_group_ = true
 
 [node name="hierro" type="Label" parent="." unique_id=1180700050]
-modulate = Color(0.35304663, 0.45164502, 0.92419654, 1)
+modulate = Color(0.061358526, 0.0867861, 0.30674416, 1)
 offset_left = -48.0
 offset_top = -90.0
 offset_right = -8.0
 offset_bottom = -67.0
+theme_override_font_sizes/font_size = 21
 text = "Hierro"
+metadata/_edit_group_ = true
 
 [node name="lingote" type="Label" parent="." unique_id=305693269]
-modulate = Color(0.6541587, 0.65174586, 0.21741, 1)
+modulate = Color(0.012469113, 0.23782697, 0.005219395, 1)
 offset_left = -51.0
 offset_top = 67.0
 offset_right = -11.0
 offset_bottom = 90.0
+theme_override_font_sizes/font_size = 21
 text = "Lingote:"
+metadata/_edit_group_ = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

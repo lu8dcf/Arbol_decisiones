@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dfadd01jfq8ki"]
 
-[ext_resource type="Texture2D" uid="uid://bca53lfx8p0yt" path="res://Models/mapa.png" id="1_gpbuu"]
 [ext_resource type="Script" uid="uid://m74ten6ugqsm" path="res://Assets/Scripts/juego/mapa.gd" id="1_wnxg7"]
 [ext_resource type="Script" uid="uid://hw7uecvlb16v" path="res://Assets/Scripts/juego/salida.gd" id="2_egq0c"]
+[ext_resource type="Texture2D" uid="uid://c3ewaqhekm318" path="res://Models/suelo.png" id="6_cihk8"]
 [ext_resource type="Texture2D" uid="uid://by83kaupt3js5" path="res://Models/caja_6.png" id="6_wyybc"]
 [ext_resource type="Script" uid="uid://cyg6cxssry3v4" path="res://Assets/Scripts/juego/llegada.gd" id="7_5rdxw"]
 [ext_resource type="Texture2D" uid="uid://2gjlt7bif001" path="res://Models/caja_2.png" id="7_6mnon"]
@@ -23,6 +23,12 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(30, 21, 55, 582, 1126, 
 [node name="mapa" type="StaticBody2D" unique_id=1102544586]
 collision_mask = 2
 script = ExtResource("1_wnxg7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1511240424]
+z_index = -1
+position = Vector2(581.5, 321.5)
+scale = Vector2(0.7545573, 0.744213)
+texture = ExtResource("6_cihk8")
 
 [node name="salida" type="Area2D" parent="." unique_id=1880506477]
 z_index = 1
@@ -60,12 +66,6 @@ metadata/_edit_group_ = true
 position = Vector2(0.5, -1.5)
 shape = SubResource("RectangleShape2D_sft30")
 metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1511240424]
-visible = false
-position = Vector2(581.5, 321.5)
-scale = Vector2(0.7545573, 0.744213)
-texture = ExtResource("1_gpbuu")
 
 [node name="reg1" type="NavigationRegion2D" parent="." unique_id=1712672973]
 navigation_polygon = SubResource("NavigationPolygon_6c2uc")

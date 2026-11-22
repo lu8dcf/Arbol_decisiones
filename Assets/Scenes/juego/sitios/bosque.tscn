@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7gepf3sivg4c"]
 
 [ext_resource type="Script" uid="uid://d320vdverlond" path="res://Assets/Scenes/juego/sitios/bosque.gd" id="1_dkexb"]
-[ext_resource type="Texture2D" uid="uid://7tuxjni6cxl7" path="res://Models/bosque.jpg" id="1_opt8j"]
+[ext_resource type="Texture2D" uid="uid://cwojctxq8rquy" path="res://Models/bosque.png" id="2_dkexb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 73.33485
@@ -12,11 +12,12 @@ script = ExtResource("1_dkexb")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=34386725]
-position = Vector2(5, 2)
-scale = Vector2(0.025276674, 0.02867101)
-texture = ExtResource("1_opt8j")
+position = Vector2(-10.999997, 46.999996)
+scale = Vector2(0.12936606, 0.12679666)
+texture = ExtResource("2_dkexb")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1494331517]
+position = Vector2(-16, 50)
 shape = SubResource("CircleShape2D_sugfe")
 metadata/_edit_group_ = true

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b7i1m1wec61l2"]
 
 [ext_resource type="Script" uid="uid://bbsq0s3vo641f" path="res://Assets/Scenes/juego/sitios/mina.gd" id="1_e6dtq"]
-[ext_resource type="Texture2D" uid="uid://rd65e2pv7jwn" path="res://Models/mina.png" id="1_l0tv5"]
+[ext_resource type="Texture2D" uid="uid://bjymox34ma85v" path="res://Models/mina_hierro.png" id="2_e6dtq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 60.299255
@@ -12,9 +12,9 @@ script = ExtResource("1_e6dtq")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=905016026]
-position = Vector2(2, -1.0000076)
-scale = Vector2(0.34517047, 0.35384616)
-texture = ExtResource("1_l0tv5")
+position = Vector2(-2, 5.000038)
+scale = Vector2(0.12375711, 0.12125901)
+texture = ExtResource("2_e6dtq")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=28247506]

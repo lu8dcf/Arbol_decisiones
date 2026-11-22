@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2ln4jo0no0jh"]
 
 [ext_resource type="Script" uid="uid://c4spt6ymksnb6" path="res://Assets/Scenes/juego/npc_4.gd" id="1_ka27a"]
-[ext_resource type="Texture2D" uid="uid://bqhln82rq6i53" path="res://Models/6.png" id="2_3ox1s"]
+[ext_resource type="Texture2D" uid="uid://bxvd88gkdl03g" path="res://Models/herrero.png" id="2_ka27a"]
 [ext_resource type="BehaviorTree" uid="uid://du6bse4i18k51" path="res://ai/carbonero_tree.tres" id="3_ka27a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
@@ -18,9 +18,9 @@ script = ExtResource("1_ka27a")
 shape = SubResource("CircleShape2D_sugfe")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1108293392]
-position = Vector2(-4.172325e-07, -1.1920929e-07)
-scale = Vector2(0.08, 0.06666666)
-texture = ExtResource("2_3ox1s")
+position = Vector2(2, 3)
+scale = Vector2(0.04783203, 0.045475263)
+texture = ExtResource("2_ka27a")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1305577928]
 radius = 50.0
@@ -32,8 +32,9 @@ blackboard_plan = SubResource("BlackboardPlan_mvjyh")
 
 [node name="Label" type="Label" parent="." unique_id=842467391]
 modulate = Color(0.0054535302, 0.054812185, 0.0015839138, 1)
-offset_left = -10.0
-offset_top = -28.0
-offset_right = 13.0
-offset_bottom = -5.0
+offset_left = -15.0
+offset_top = -43.0
+offset_right = 8.0
+offset_bottom = -15.0
+theme_override_font_sizes/font_size = 20
 text = "1"

@@ -7,13 +7,13 @@
 radius = 73.109505
 
 [node name="Descanso" type="Area2D" unique_id=1954115742]
-position = Vector2(574, 527)
+position = Vector2(610, 527)
 script = ExtResource("1_1guc4")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1631528293]
-position = Vector2(7.1874905, 4.749996)
-scale = Vector2(0.32044363, 0.32142857)
+position = Vector2(5.9999847, 3.9999886)
+scale = Vector2(0.18640587, 0.20197405)
 texture = ExtResource("1_kcnx3")
 metadata/_edit_group_ = true
 

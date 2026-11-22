@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbb0b7s28cg8x"]
 
 [ext_resource type="Script" uid="uid://cflda2il6u786" path="res://Assets/Scenes/juego/sitios/carbon.gd" id="1_n28c1"]
-[ext_resource type="Texture2D" uid="uid://ckxtnloudntos" path="res://Models/carbon.png" id="2_854h2"]
+[ext_resource type="Texture2D" uid="uid://cowq1ucbvss0f" path="res://Models/mina_carbon.png" id="2_n28c1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sugfe"]
 radius = 63.15061
@@ -12,7 +12,9 @@ script = ExtResource("1_n28c1")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1125199200]
-texture = ExtResource("2_854h2")
+position = Vector2(1.0000076, 7.6293945e-06)
+scale = Vector2(0.13134767, 0.11669923)
+texture = ExtResource("2_n28c1")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1656947791]
