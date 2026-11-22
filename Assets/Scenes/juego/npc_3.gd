@@ -52,4 +52,4 @@ func llego_destino() -> bool:
 
 func actualizar_label():
 
-	lbl_madera.text = str(nivel)
+	lbl_madera.text = "lingotes " + str(nivel)

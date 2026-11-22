@@ -14,7 +14,7 @@ func _tick(_delta: float) -> Status:
 		herreria_node.nivel_lingote = clamp(
 			herreria_node.nivel_lingote,
 			0,
-			20
+			10
 		)
 
 		#print("Nivel hierro:", horno_node.nivel_lenia)

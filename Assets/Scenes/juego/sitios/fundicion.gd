@@ -18,6 +18,7 @@ func _ready() -> void:
 
 
 func _on_timer_timeout() -> void:
+	actualizar_texto()
 	if nivel_espada >9:
 		return
 	if nivel_carbon > 5 and nivel_lingote > 1:
